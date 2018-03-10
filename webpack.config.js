@@ -27,7 +27,8 @@ module.exports = {
         ]
     },
     devServer: {
-        contentBase: path.join(__dirname, 'public')
+        contentBase: path.join(__dirname, 'public'),
+        historyApiFallback: true // needed for client-side routing (react-router-dom)
     },
     devtool: 'cheap-module-eval-source-map'
 };
